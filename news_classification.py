@@ -48,7 +48,7 @@ print(report)
 # Probability for the positive class (real news)
 y_prob = classifier.predict_proba(X_test)[:, 1]
 
-# Step 6: Plot Histogram of Predicted Probabilities
+# Plot Histogram of Predicted Probabilities
 plt.figure(figsize=(8, 6))
 plt.hist(y_prob, bins=20, color='blue', alpha=0.7)
 plt.xlabel('Predicted Probability (Real News)')
